@@ -1,0 +1,9 @@
+.portfolio-body {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
