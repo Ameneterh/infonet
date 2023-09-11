@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/infonet/static/css/main.6227380c.css",
+    "main.js": "/infonet/static/js/main.384210bd.js",
+    "static/media/graphics-design-image.jpg": "/infonet/static/media/graphics-design-image.aceeef567e0cbb542418.jpg",
+    "static/media/portfolio-1.png": "/infonet/static/media/portfolio-1.f36472fb92aeffd1b603.png",
+    "static/media/instagram-icon.png": "/infonet/static/media/instagram-icon.0c59daddf503027c2368.png",
+    "static/media/facebook-icon.png": "/infonet/static/media/facebook-icon.9920df0090a33e66a897.png",
+    "static/media/twitter-x-icon.png": "/infonet/static/media/twitter-x-icon.53eedfbe15a731ceeb55.png",
+    "static/media/web-dev-image.png": "/infonet/static/media/web-dev-image.d579dc5c86c1b3395b19.png",
+    "static/media/infonet-footer.png": "/infonet/static/media/infonet-footer.0f1dfad68439876f8724.png",
+    "static/media/linkedin-icon.png": "/infonet/static/media/linkedin-icon.f41b59801d852cbb3766.png",
+    "static/media/infonet-header.png": "/infonet/static/media/infonet-header.77535f016f35874d78e7.png",
+    "index.html": "/infonet/index.html",
+    "main.6227380c.css.map": "/infonet/static/css/main.6227380c.css.map",
+    "main.384210bd.js.map": "/infonet/static/js/main.384210bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6227380c.css",
+    "static/js/main.384210bd.js"
+  ]
+}
