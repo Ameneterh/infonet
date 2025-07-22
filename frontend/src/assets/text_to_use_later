@@ -1,0 +1,199 @@
+Great — here’s a **sample policy** you can use or adapt for your company regarding **customers requesting quotes for graphic design services**:
+
+---
+
+### **Customer Quotation Request Policy**
+
+**Effective Date:** \[Insert Date]
+**Reviewed:** \[Insert Date]
+
+#### **1. Purpose**
+
+This policy outlines the procedure for customers requesting quotes for graphic design services to ensure clear communication, accurate pricing, and timely responses.
+
+---
+
+#### **2. Scope**
+
+This policy applies to all clients or prospective clients seeking quotations for any design work provided by \[Your Company Name].
+
+---
+
+#### **3. Quotation Request Procedure**
+
+**a. Initial Inquiry**
+Customers may request a quote by:
+
+- Filling out the Quote Request Form on our website
+- Emailing us at \[email address]
+- Calling our office at \[phone number]
+
+**b. Required Information**
+To receive an accurate quote, customers must provide the following:
+
+- Project description (e.g., logo design, brochure, web graphics)
+- Number of design assets required
+- Preferred design style or inspiration
+- Final format(s) needed (e.g., JPG, PDF, AI)
+- Intended use (digital, print, commercial, etc.)
+- Deadline or timeline
+- Budget (optional but encouraged)
+
+---
+
+#### **4. Turnaround Time**
+
+Quotes are typically provided within **2–3 business days** after receiving all required information. Delays may occur if the request lacks sufficient detail.
+
+---
+
+#### **5. Validity of Quote**
+
+All quotations are valid for **30 calendar days** from the date issued, unless otherwise stated.
+
+---
+
+#### **6. Revisions and Clarifications**
+
+If project requirements change after the initial quote, a revised quotation may be issued. We reserve the right to reassess timelines and pricing accordingly.
+
+---
+
+#### **7. Confidentiality**
+
+All project details shared with us for quotation purposes will be treated as confidential and will not be disclosed without the customer’s consent.
+
+---
+
+#### **8. Acceptance**
+
+To proceed with a project, customers must confirm acceptance of the quote in writing (via email or signed document). A deposit may be required before work begins.
+
+---
+
+Would you like this turned into a formatted PDF, or need help integrating this into your website or client onboarding documents?
+
+<!-- --------------- Request for Quotation Form -------------------- -->
+
+import React, { useState } from 'react';
+
+const QuoteRequestForm = () => {
+const [selectedService, setSelectedService] = useState('');
+
+const handleServiceChange = (e) => {
+setSelectedService(e.target.value);
+};
+
+return (
+
+<form className="max-w-3xl mx-auto p-6 bg-white rounded-2xl shadow-md space-y-6">
+<h2 className="text-2xl font-bold text-center">Request a Quote</h2>
+
+      {/* Basic Info */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label className="block font-semibold">Full Name *</label>
+          <input type="text" name="name" required className="input" />
+        </div>
+        <div>
+          <label className="block font-semibold">Company Name</label>
+          <input type="text" name="company" className="input" />
+        </div>
+        <div>
+          <label className="block font-semibold">Email Address *</label>
+          <input type="email" name="email" required className="input" />
+        </div>
+        <div>
+          <label className="block font-semibold">Phone Number</label>
+          <input type="tel" name="phone" className="input" />
+        </div>
+      </div>
+
+      {/* Service Selector */}
+      <div>
+        <label className="block font-semibold">Type of Service *</label>
+        <select
+          name="service"
+          required
+          onChange={handleServiceChange}
+          className="input"
+        >
+          <option value="">-- Select Service --</option>
+          <option value="graphic_design">Graphic Design</option>
+          <option value="packaging_design">Product Packaging Design</option>
+          <option value="website_dev">Website Development / Hosting</option>
+          <option value="data_analysis">Data Analysis</option>
+        </select>
+      </div>
+
+      {/* Conditional Sections */}
+      {selectedService === 'graphic_design' && (
+        <div className="service-section">
+          <h3 className="font-semibold text-lg mb-2">Graphic Design Details</h3>
+          <input type="text" name="graphic_type" className="input mb-2" placeholder="Design Type & Quantity" />
+          <input type="text" name="graphic_dimensions" className="input mb-2" placeholder="Dimensions & Format" />
+          <textarea name="graphic_style" className="input mb-2" placeholder="Preferred Style or References" />
+          <input type="date" name="graphic_deadline" className="input mb-2" />
+          <input type="file" name="graphic_assets" multiple className="input" />
+        </div>
+      )}
+
+      {selectedService === 'packaging_design' && (
+        <div className="service-section">
+          <h3 className="font-semibold text-lg mb-2">Packaging Design Details</h3>
+          <input type="text" name="packaging_product" className="input mb-2" placeholder="Product Type & Dimensions" />
+          <textarea name="packaging_specs" className="input mb-2" placeholder="Material & Print Specifications" />
+          <textarea name="packaging_content" className="input mb-2" placeholder="Content to Include" />
+          <input type="date" name="packaging_deadline" className="input mb-2" />
+          <input type="file" name="packaging_assets" multiple className="input" />
+        </div>
+      )}
+
+      {selectedService === 'website_dev' && (
+        <div className="service-section">
+          <h3 className="font-semibold text-lg mb-2">Website Development Details</h3>
+          <input type="text" name="website_purpose" className="input mb-2" placeholder="Website Purpose" />
+          <input type="text" name="website_pages" className="input mb-2" placeholder="Estimated Number of Pages" />
+          <textarea name="website_features" className="input mb-2" placeholder="Required Features" />
+          <select name="website_hosting" className="input mb-2">
+            <option value="">Need Hosting and Domain?</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+          <input type="date" name="website_deadline" className="input mb-2" />
+          <input type="file" name="website_assets" multiple className="input" />
+        </div>
+      )}
+
+      {selectedService === 'data_analysis' && (
+        <div className="service-section">
+          <h3 className="font-semibold text-lg mb-2">Data Analysis Details</h3>
+          <textarea name="analysis_goal" className="input mb-2" placeholder="Project Goal / Questions to Answer" />
+          <input type="text" name="data_format" className="input mb-2" placeholder="Data Source Format" />
+          <input type="text" name="data_tools" className="input mb-2" placeholder="Preferred Tools" />
+          <textarea name="data_deliverables" className="input mb-2" placeholder="Expected Deliverables" />
+          <input type="date" name="data_deadline" className="input mb-2" />
+          <input type="file" name="data_upload" multiple className="input" />
+        </div>
+      )}
+
+      {/* Additional Notes */}
+      <div>
+        <label className="block font-semibold">Additional Notes</label>
+        <textarea name="additional" className="input" />
+      </div>
+
+      <div>
+        <label className="block font-semibold">Estimated Budget</label>
+        <input type="text" name="budget" className="input" />
+      </div>
+
+      <button type="submit" className="w-full mt-4 bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 transition">
+        Submit Request
+      </button>
+    </form>
+
+);
+};
+
+export default QuoteRequestForm;

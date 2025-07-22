@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+/* clean styled component */
+@layer components {
+  .card {
+    @apply bg-black text-white rounded-lg py-4 px-5 text-center flex items-center justify-center hover:bg-white hover:text-black transition-all cursor-pointer;
+  }
+
+  .cta_button_card {
+    @apply bg-orange-700 text-white hover:bg-opacity-55 cursor-pointer rounded-lg py-2 px-4 w-40 flex items-center justify-center;
+  }
+
+  .normal_button {
+    @apply mt-5 w-full py-3 px-4 bg-gradient-to-r from-green-500 to-emerald-500 font-semibold rounded-lg hover:from-green-600 hover:to-emerald-700 border border-gray-200 focus:outline-none focus:ring-1 focus:ring-green-500 focus:ring-offset-1 focus:ring-offset-gray-900 transition duration-200 cursor-pointer flex items-center justify-center;
+  }
+}
+
+/* ant-d components styling */
+.ant-collapse-header {
+  color: white !important; /* Change header text color */
+}
+
+.ant-collapse-content {
+  color: rgba(255, 255, 255, 0.747) !important; /* Change content text color */
+  font-weight: lighter;
+  background-color: rgba(0, 0, 0, 0.329) !important;
+}
+
+.ant-tabs-tab {
+  color: gray !important;
+  font-weight: 600;
+  font-size: 100px;
+}
+
+.ant-tabs-tab-active {
+  color: white !important;
+}
+
+.ant-tabs-content {
+  color: white !important;
+}
+
+.ant-form-item {
+  margin-bottom: 8px;
+}
+
+/* .ant-input > input::placeholder {
+  font-style: italic;
+  text-align: end;
+  color: red;
+  opacity: 1;
+} */
+
+/* -------------------------------- */
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  /* font-style: normal; */
+}
+
+.italianno-regular {
+  font-family: "Italianno", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.active {
+  background-color: rgba(255, 255, 255, 0.027);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+li {
+  list-style-type: none;
+}
+
+select {
+  min-height: 38px !important;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 5px !important;
+  /* width: 100%; */
+}
+
+.max-width {
+  height: 8px !important;
+  width: 8px !important;
+}
+
+.search {
+  border-radius: 50px !important;
+}
+
+.label {
+  margin-bottom: -5px;
+}
+
+select {
+  border: none !important;
+  border-radius: 5px !important;
+  box-shadow: none !important;
+  font-size: 13px;
+}
+
+select:focus {
+  /* min-height: 42px; */
+  border: none !important;
+  border-radius: 5px !important;
+  box-shadow: none !important;
+  font-size: 13px;
+}
+
+textarea {
+  /* height: 54px !important; */
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 5px !important;
+  /* width: 100%; */
+}
+
+textarea:focus {
+  min-height: 42px;
+  border: 1px solid rgb(134, 134, 134);
+  border-radius: 5px !important;
+  box-shadow: none !important;
+}
+
+button {
+  height: 42px !important;
+  margin-top: 20px;
+  /* box-shadow: none !important; */
+}
+
+table {
+  border-top: 2px solid rgb(160, 160, 160);
+  border-bottom: 2px solid rgb(160, 160, 160);
+}
+
+ul {
+  list-style-type: disc;
+  padding: 10px 0 !important;
+  padding-left: 20px !important;
+}
