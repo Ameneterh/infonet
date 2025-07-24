@@ -28,8 +28,8 @@ export default function OurClients() {
         <h1 className="text-center text-2xl md:text-4xl relative">
           How we are doing{" "}
           <img
-            src={images.line}
-            className="w-20 md:w-40 absolute right-[40%]"
+            src={images.white_swipe}
+            className="w-20 md:w-64 absolute right-[40%]"
           />
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 mt-5 md:mt-10">

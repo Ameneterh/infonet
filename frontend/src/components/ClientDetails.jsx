@@ -23,7 +23,7 @@ export default function ClientDetails({
       variants={fadeInUp}
       initial="hidden"
       animate="visible"
-      className="my-4 p-4 w-full md:w-80 flex flex-col items-center rounded-md shadow-md shadow-gray-700 bg-opacity-50 border border-gray-700"
+      className="my-4 p-4 w-full md:w-80 flex flex-col items-center rounded-md shadow-md shadow-black bg-opacity-50 border border-green-900"
     >
       {client_logo ? (
         <img

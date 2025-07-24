@@ -28,7 +28,10 @@ export default function HeroComponent() {
         Igniting a revolution in{" "}
         <span className="text-orange-500 block relative">
           Packaging Design{" "}
-          <img src={images.line} className="w-40 md:w-56 absolute right-0" />
+          <img
+            src={images.white_swipe}
+            className="w-40 md:w-64 absolute right-0"
+          />
         </span>
       </h1>
       <div className="mt-10 md:mt-20 flex flex-col-reverse md:flex-row gap-10">
@@ -49,7 +52,10 @@ export default function HeroComponent() {
             </p>
           </div>
 
-          <CTAButtons text="Get Your Product Packaging" />
+          <CTAButtons
+            text="Let's get you a befitting packaging"
+            url="/contact"
+          />
         </div>
         <div className="flex-1">
           <img src={images.hero1} />

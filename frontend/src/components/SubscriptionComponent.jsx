@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { images } from "../assets/images.js";
+import { Input } from "./Input.jsx";
+import { Mail, KeySquare, Loader, Eye, EyeOff } from "lucide-react";
 
 export default function SubscriptionComponent() {
   return (
@@ -23,13 +25,13 @@ export default function SubscriptionComponent() {
           happenings in the packaging design community
         </p>
 
-        <div className="flex items-center justify-between mt-4 md:mt-10 w-full max-w-xl bg-white rounded-full p-1">
+        <div className="flex items-center justify-between gap-1 mt-4 md:mt-10 w-full max-w-xl bg-white rounded-full p-1">
           <input
             type="text"
             placeholder="Enter your email"
-            className="flex-1 w-full h-8 text-black font-extralight p-1 outline-none border-none ring-0 focus:outline-none focus:border-none px-1 md:px-4"
+            className="flex-1 w-full text-black font-extralight p-1 outline-none border-none ring-0 focus:outline-none focus:border-none px-1 md:px-4 rounded-full"
           />
-          <button className="text-sm bg-orange-800 hover:opacity-85 px-4 rounded-full">
+          <button className="text-sm bg-orange-800 hover:opacity-85 px-4 rounded-full my-0">
             SUBSCRIBE
           </button>
         </div>

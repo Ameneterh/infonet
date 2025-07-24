@@ -17,10 +17,4 @@ export const outlook = [
     text: "websites delivered",
     url: "/projects",
   },
-  // {
-  //   id: 4,
-  //   number: "10+",
-  //   text: "websites delivered",
-  //   url: "/projects",
-  // },
 ];

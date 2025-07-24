@@ -47,7 +47,7 @@ export default function PrivacyAndTerms() {
               <FaCheckCircle className="text-green-700" size={20} />
               <p className="flex-1 font-extralight">
                 The Standard License grants you a non-exclusive right to
-                navigate and register for our event
+                navigate, register on our site, and request our services
               </p>
             </div>
             <CTAButtons text="Read More Here" url="/privacy-terms" />

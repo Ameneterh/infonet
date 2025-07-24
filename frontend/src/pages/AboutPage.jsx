@@ -240,18 +240,22 @@ export default function AboutPage() {
               </div>
 
               <p className="text-xs mb-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquid numquam aspernatur dolor omnis? Fugiat accusantium vero
-                a ab nam est obcaecati atque laborum illo dolorum enim dolor
-                sunt, ex nemo. Lorem ipsum dolor si.
+                Erdoo Blessing Abanyi, a Computer Science graduate from the
+                University of Jos, Nigeria, is the{" "}
+                <b>CEO of a dynamic company</b>
+                specializing in{" "}
+                <b>graphics design, web development, and data analysis</b>. As a
+                <b>certified data analyst</b>, she masterfully blends technical
+                expertise with entrepreneurial vision, leading her team to
+                deliver innovative digital solutions and insightful data
+                strategies.
               </p>
               <p className="text-xs mb-3">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquid numquam aspernatur dolor omnis? Fugiat accusantium vero
-                a ab nam est obcaecati atque laborum illo dolorum enim dolor
-                sunt, ex nemo. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Nulla molestias magnam assumenda qui sit
-                aliquam neque, ducimus eum dignissimos expedita.
+                Beyond her role as a <b>driven entrepreneur</b>, Erdoo is also a
+                <b>dedicated teacher</b>, committed to empowering others with
+                essential digital skills. Her multifaceted career highlights her
+                passion for technology and education, establishing her as a
+                significant figure in Nigeria's evolving tech landscape.
               </p>
             </motion.div>
           </motion.div>

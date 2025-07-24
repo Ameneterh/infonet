@@ -13,6 +13,7 @@ import bg_image from "./bg_image.jpg";
 import starlight_image from "./starlight_image.png";
 import deborah_hospital from "./deborah_hospital.png";
 import nature_line from "./nature_line.png";
+import white_swipe from "./white_swipe.png";
 
 export const images = {
   hero1: heroImage1,
@@ -30,4 +31,5 @@ export const images = {
   starlight_image: starlight_image,
   deborah_hospital: deborah_hospital,
   nature_line: nature_line,
+  white_swipe: white_swipe,
 };

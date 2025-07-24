@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 // Define the content as reusable data
 export const sections = [
   {
@@ -5,28 +7,36 @@ export const sections = [
     content: (
       <div>
         <p>
-          [Your Company Name] is a creative design agency based in [City,
-          Nigeria], specializing in graphics and packaging design for clients
-          locally and internationally.
+          <b>Infonet Grafix Global</b> is a creative design agency based in
+          Kaduna, Nigeria, specializing in graphics, packaging design, website
+          development, and data analysis for clients locally and
+          internationally.
         </p>
         <p className="mt-2">
           <strong>Contact Details:</strong> <br />
-          [Company Address] <br />
+          No 25 Liberty Street, Karatudu, Kaduna, Kaduna State, Nigeria <br />
           Email:{" "}
-          <a href="mailto:email@example.com" className="text-blue-600">
-            email@example.com
-          </a>
+          <Link
+            to="mailto:infonetgrafix.webdev@gmail.com"
+            className="text-blue-600"
+          >
+            infonetgrafix.webdev@gmail.com
+          </Link>
           <br />
-          Phone: [Phone Number] <br />
+          Phone:
+          <Link to="tel:+2348148224299" className="text-blue-600">
+            +2348148224299
+          </Link>
+          <br />
           Website:{" "}
-          <a
-            href="https://www.yourcompanywebsite.com"
+          <Link
+            to="https://www.infonetgrafix.com"
             className="text-blue-600"
             target="_blank"
             rel="noopener noreferrer"
           >
-            www.yourcompanywebsite.com
-          </a>
+            www.infonetgrafix.com
+          </Link>
         </p>
       </div>
     ),
@@ -35,11 +45,26 @@ export const sections = [
     title: "2. Personal Data We Collect",
     content: (
       <ul className="list-disc pl-6 space-y-1">
-        <li>Identity Information: Name, company name, job title</li>
-        <li>Contact Information: Email, phone number, address</li>
-        <li>Project Data: Creative input, brand assets, and briefs</li>
-        <li>Transactional Data: Billing and payment info</li>
-        <li>Website & Technical Data: IP address, browser type, cookies</li>
+        <li>
+          <span className="font-bold pr-2">Identity Information:</span> Name,
+          company name, job title
+        </li>
+        <li>
+          <span className="font-bold pr-2">Contact Information:</span> Email,
+          phone number, address
+        </li>
+        <li>
+          <span className="font-bold pr-2">Project Data:</span> Creative input,
+          brand assets, and briefs
+        </li>
+        <li>
+          <span className="font-bold pr-2">Transactional Data:</span> Billing
+          and payment info
+        </li>
+        <li>
+          <span className="font-bold pr-2">Website & Technical Data:</span> IP
+          address, browser type, cookies
+        </li>
       </ul>
     ),
   },
@@ -173,21 +198,27 @@ export const sections = [
         <strong>[Your Company Name]</strong>
         <br />
         Email:{" "}
-        <a href="mailto:email@example.com" className="text-blue-600">
-          email@example.com
-        </a>
+        <Link
+          to="mailto:infonetgrafix.webdev@gmail.com"
+          className="text-blue-600"
+        >
+          infonetgrafix.webdev@gmail.com
+        </Link>
         <br />
-        Phone: [Phone Number]
+        Phone:
+        <Link to="tel:+2348148224299" className="text-blue-600">
+          +2348148224299
+        </Link>
         <br />
         Website:{" "}
-        <a
-          href="https://www.yourcompanywebsite.com"
+        <Link
+          to="https://www.infonetgrafix.com"
           className="text-blue-600"
           target="_blank"
           rel="noopener noreferrer"
         >
-          www.yourcompanywebsite.com
-        </a>
+          www.infonetgrafix.com
+        </Link>
       </p>
     ),
   },

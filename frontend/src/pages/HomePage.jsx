@@ -10,6 +10,7 @@ import OutLookComponent from "../components/home_page_components/OutLookComponen
 import FrequentlyAskedQuestions from "../components/home_page_components/FrequentlyAskedQuestions";
 import PrivacyAndTerms from "../components/home_page_components/PrivacyAndTerms";
 import SubscriptionComponent from "../components/SubscriptionComponent";
+import TestimonialsComponent from "../components/home_page_components/TestimonialsComponent";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -55,6 +56,7 @@ export default function HomePage() {
         <HeroComponent />
         <IntroducingInfonet />
         <OutLookComponent />
+        <TestimonialsComponent />
         <FrequentlyAskedQuestions />
         <PrivacyAndTerms />
         <SubscriptionComponent />
