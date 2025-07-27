@@ -52,13 +52,13 @@ export default function HeaderComponent({ business }) {
             <p>Projects</p>
             <hr className="w-full border-none h-[2px] bg-white/80 mt-1 hidden" />
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/blogs"
             className={`flex flex-col items-center px-5 py-1 rounded-md hover:bg-gray-600/20 hover:border-[1px] hover:border-gray-600`}
           >
             <p>Blog</p>
             <hr className="w-full border-none h-[2px] bg-white/80 mt-1 hidden" />
-          </NavLink>
+          </NavLink> */}
           <NavLink
             to="/about"
             className={`flex flex-col items-center px-5 py-1 rounded-md hover:bg-gray-600/20 hover:border-[1px] hover:border-gray-600`}
@@ -138,9 +138,9 @@ export default function HeaderComponent({ business }) {
               <li>
                 <Link to="/projects">PROJECTS</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/blogs">BLOG</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/about">ABOUT</Link>
               </li>

@@ -134,10 +134,7 @@ function App() {
               element={<HandlerActivationPage />}
             />
             <Route path="/projects" element={<ProjectsPage />} />
-            <Route
-              path="/projects/:projectId"
-              element={<ProjectDetailsPage />}
-            />
+            <Route path="/projects/:title" element={<ProjectDetailsPage />} />
             <Route path="/blogs" element={<BlogsPage />} />
             <Route path="/blogs/:slug" element={<SingleArticlePage />} />
             <Route path="/about" element={<AboutPage />} />

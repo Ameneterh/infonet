@@ -37,13 +37,16 @@ export default function ProjectComponent({
       <div className="flex flex-col gap-2">
         <p className="text-sm text-orange-400">{category}</p>
         <div className="flex items-center justify-between px-1">
-          <h1 className="text-lg font-bold truncate overflow-hidden">
+          <Link
+            to={`/projects/${title}`}
+            className="text-lg font-bold truncate overflow-hidden"
+          >
             {title}
-          </h1>
+          </Link>
           <MdArrowOutward size={20} />
         </div>
         <p className="text-xs text-gray-400 line-clamp-4">{project_brief}</p>
-        <p className="text-[13px] text-white line-clamp-1">
+        {/* <p className="text-[13px] text-white line-clamp-1">
           Live Link:{" "}
           <Link
             to={project_url}
@@ -52,12 +55,12 @@ export default function ProjectComponent({
           >
             View Project
           </Link>
-        </p>
+        </p> */}
       </div>
 
-      <p className="text-sm text-orange-400 font-extralight">
+      {/* <p className="text-sm text-orange-400 font-extralight">
         Posted on: <span className="text-white font-bold">{date}</span>
-      </p>
+      </p> */}
     </motion.section>
   );
 }
