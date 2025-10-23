@@ -41,13 +41,15 @@ export default function IntroducingInfonet() {
             </span>
           </h1>
           <p className="w-full md:w-3/4">
-            With our dedicated and visionary visually expressive team, our
-            purpose is as clear as day: to shape the future of product
-            packaging. Whether you're a start up, or a fortune 500 company,
-            you'll find our packaging design ideas meet your needs.{" "}
+            Your brand deserves a packaging that speaks before a word is said,
+            and that is exactly what we help you create. Whether you are
+            launching your first product or leading a global brand, we design
+            packaging that reflects your vision, resonates with your customers,
+            and elevates your market presence.
             <span className="block mt-5">
-              Let's be your partners that see to your every packaging design
-              needs; we are here for you!
+              Think of us as partners invested in your success, here to support
+              every stage of your packaging journey and bring your ideas to life
+              with creativity, care, and clarity.
             </span>
           </p>
 

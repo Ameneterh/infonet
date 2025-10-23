@@ -7,7 +7,7 @@ import freq_qsts from "./freq_qsts.png";
 import wedding from "./wedding.png";
 import product from "./product.png";
 import website from "./website.png";
-import ceo_picture from "./ceo_picture.png";
+import ceo_picture from "./ceo_picture.jpeg";
 import data_analysis from "./data_analysis.png";
 import bg_image from "./bg_image.jpg";
 import starlight_image from "./starlight_image.png";
