@@ -18,7 +18,7 @@ const __dirname = path.resolve();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// app.use(cors({ origin: "http://localhost:5174", credentials: true }));
+app.use(cors({ origin: "http://localhost:5174", credentials: true }));
 
 app.use(express.json());
 app.use(cookieParser());
@@ -35,17 +35,18 @@ app.use("/server/auth", authRouter);
 // app.use("/backend/reviews", reviewsRouter);
 
 // render deployment
-// if (process.env.NODE_ENV === "production") {
-//   app.use("*", express.static(path.join(__dirname, "/frontend/dist")));
-//   app.get("*", (req, res) => {
-//     res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
-//   });
-// }
 
-app.use(express.static(path.join(__dirname, "/frontend/dist")));
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
-});
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "/frontend/dist")));
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
+  });
+}
+
+// app.use(express.static(path.join(__dirname, "/frontend/dist")));
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "frontend", "dist", "index.html"));
+// });
 
 app.listen(PORT, () =>
   console.log(`Node/Express Server is running on Port ${PORT}`)
